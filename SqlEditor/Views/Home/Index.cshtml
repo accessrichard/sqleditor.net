@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Sql Editor";
+}
+
+ <div data-dojo-type="sqleditor/widgets/SqlEditor" id="editor"></div>
+
+@section scripts {
+    <script data-dojo-config="async: true, isDebug: true" src="/static/dojo/dojo.js"></script>
+    <script>
+        require(["sqleditor/sqleditor"]);
+    </script>
+}
+
+@section styles {
+    <link rel="stylesheet" href="/static/dgrid/css/dgrid.css" />
+    <link rel="stylesheet" type="text/css" href="/static/dojo/resources/dojo.css">
+    <link rel="stylesheet" type="text/css" href="/static/dijit/themes/claro/claro.css" />
+    <link rel="stylesheet" href="/static/codemirror/lib/codemirror.css" />
+    <link rel="Stylesheet" href="/static/sqleditor/site.css" />
+}
+

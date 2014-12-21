@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SqlEditor.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="BaseDirectory" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AllowableExtensions" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">.sql</Value>
+    </Setting>
+    <Setting Name="DriversList" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\Program Files (x86)\MySQL\MySQL Connector Net 6.9.5\Assemblies\v4.5\MySql.Data.dll</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
