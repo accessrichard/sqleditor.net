@@ -122,7 +122,8 @@
             columns.Add(new Column
                             {
                                 Field = IdField,
-                                Label = "ID()"
+                                Label = "ID()",
+                                Hidden = true
                             });
 
             result.Columns = columns;
