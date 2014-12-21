@@ -5,7 +5,7 @@
 
     /// <summary>
     /// A base controller for Json results.
-	/// Uses JSON.NET for serialization to JSON.
+    /// Uses JSON.NET for serialization to JSON.
     /// </summary>
     public abstract class JsonController : Controller
     {
