@@ -17,7 +17,7 @@
         /// <summary>
         /// Gets a cryptographic secret key.
         /// </summary>
-        public static byte[] GetSecretKey
+        public static byte[] SecretKey
         {
             get
             {
@@ -43,9 +43,9 @@
         /// <returns>A combination key based of a user key and the application key.</returns>
         public static byte[] GetUserSpecificSecretKey(string userKey)
         {
-            var key = GetSecretKey;
+            var key = SecretKey;
             var userKeyEncoded = Encoding.UTF8.GetBytes(userKey);
-            for (var i = 0; i < GetSecretKey.Length / 2 && i < userKeyEncoded.Length; i++)
+            for (var i = 0; i < SecretKey.Length / 2 && i < userKeyEncoded.Length; i++)
             {
                 key[i] = userKeyEncoded[i];
             }
