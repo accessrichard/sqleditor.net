@@ -25,12 +25,8 @@
         /// <summary>
         /// Initializes a new instance of the <see cref="Database"/> class.
         /// </summary>
-        /// <param name="settings">
-        /// The connection string settings settings.
-        /// </param>
-        /// <param name="config">
-        /// The config.
-        /// </param>
+        /// <param name="settings">The connection string settings settings.</param>
+        /// <param name="config">The config.</param>
         [DefaultConstructor]
         public Database(ConnectionStringSettings settings, IConfig config)
         {
@@ -41,8 +37,8 @@
         /// <summary>
         /// Initializes a new instance of the <see cref="Database"/> class.
         /// </summary>
-        /// <param name="config"> The config. </param>
-        /// <param name="name"> The connection string settings name. </param>
+        /// <param name="config">The config.</param>
+        /// <param name="name">The connection string settings name.</param>
         public Database(IConfig config, string name)
         {
             this.settings = config.GetConnectionSettings(name);
