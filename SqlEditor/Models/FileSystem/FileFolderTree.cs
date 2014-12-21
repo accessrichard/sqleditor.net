@@ -76,12 +76,8 @@
         /// <summary>
         /// Encodes the file paths in a file folder node to base 64.
         /// </summary>
-        /// <param name="node">
-        /// The file folder node.
-        /// </param>
-        /// <returns>
-        /// The <see cref="FileFolderNode"/>.
-        /// </returns>
+        /// <param name="node">The file folder node.</param>
+        /// <returns>The <see cref="FileFolderNode"/> encded in base 64.</returns>
         private FileFolderNode EncodeFilePaths(FileFolderNode node)
         {
             node.Id = Base64.Encode(node.Id);
@@ -101,12 +97,8 @@
         /// <summary>
         /// Searches for files and folders in a directory.
         /// </summary>
-        /// <param name="directory">
-        /// The directory path.
-        /// </param>
-        /// <param name="node">
-        /// The current node.
-        /// </param>
+        /// <param name="directory">The directory path.</param>
+        /// <param name="node">The current node.</param>
         private void PopulateFilesInFolder(string directory, Node<FileFolderNode> node)
         {
             node.Children.AddRange(
@@ -119,12 +111,8 @@
         /// <summary>
         /// Searches a directory for files and folders.
         /// </summary>
-        /// <param name="dir">
-        /// The directory.
-        /// </param>
-        /// <param name="parentNode">
-        /// The parent node.
-        /// </param>
+        /// <param name="dir">The directory path.</param>
+        /// <param name="parentNode">The parent node.</param>
         private void RecurseDirectory(string dir, Node<FileFolderNode> parentNode)
         {
             foreach (var directory in Directory.GetDirectories(dir))
