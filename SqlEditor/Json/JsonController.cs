@@ -4,7 +4,8 @@
     using System.Web.Mvc;
 
     /// <summary>
-    /// A base controller for the editor.
+    /// A base controller for Json results.
+	/// Uses JSON.NET for serialization to JSON.
     /// </summary>
     public abstract class JsonController : Controller
     {
