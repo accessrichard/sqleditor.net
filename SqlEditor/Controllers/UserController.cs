@@ -45,16 +45,10 @@
             {                
                 if (this.model.Login(system, username, password))
                 {
-                    var userKey = string.Empty;
                     var cookie = this.HttpContext.Request.Cookies.Get("sqleditor");
-                    if (cookie != null)
-                    {
-                        userKey = cookie.Value;
-                    }
-
+                    var userKey = cookie != null ? cookie.Value : string.Empty;
                     var connString = this.model.GetUserConnectionString(system, username, password).ConnectionString;
                     var cryptoConnString = Crypto.Encrypt(connString, KeyProvider.GetUserSpecificSecretKey(userKey));
-                    
                     this.Session.Add(system, cryptoConnString);
                     return this.Json(new { isSuccess = true });
                 }
