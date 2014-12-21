@@ -63,12 +63,7 @@
             }
 
             var cookie = this.Request.Cookies.Get("sqleditor");
-            var userKey = string.Empty;
-            if (cookie != null)
-            {
-                userKey = cookie.Value;
-            }
-
+            var userKey = cookie != null ? cookie.Value : string.Empty;
             var connString = Crypto.Decrypt(session, KeyProvider.GetUserSpecificSecretKey(userKey));
             var settings = new ConnectionStringSettings(
                 system,
