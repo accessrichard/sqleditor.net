@@ -25,12 +25,8 @@
         /// <summary>
         /// Initializes a new instance of the <see cref="UserModel"/> class. 
         /// </summary>
-        /// <param name="config">
-        /// The site configuration.
-        /// </param>
-        /// <param name="container">
-        /// The IOC container.
-        /// </param>
+        /// <param name="config">The site configuration.</param>
+        /// <param name="container">The IOC container.</param>
         public UserModel(IConfig config, IContainer container)
         {
             this.config = config;

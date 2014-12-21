@@ -12,34 +12,22 @@
         /// <summary>
         /// Gets a list of files and folders under the base path.
         /// </summary>
-        /// <returns>
-        /// A list of file and folders.
-        /// </returns>
+        /// <returns>A list of file and folders.</returns>
         IEnumerable<FileFolderNode> GetFileSystem();
 
         /// <summary>
         /// Gets the contents of a file.
         /// </summary>
-        /// <param name="path">
-        /// The path to the file.
-        /// </param>
-        /// <returns>
-        /// The contents of the file.
-        /// </returns>
+        /// <param name="path">The path to the file.</param>
+        /// <returns>The contents of the file.</returns>
         string GetFileContents(string path);
 
         /// <summary>
         /// Gets metadata about a file or folder.
         /// </summary>
-        /// <param name="path">
-        /// The path to the file or folder.
-        /// </param>
-        /// <param name="fileName">
-        /// The file name if a file.
-        /// </param>
-        /// <returns>
-        /// Meta data about a file or folder.
-        /// </returns>
+        /// <param name="path">The path to the file or folder.</param>
+        /// <param name="fileName">The file name if a file.</param>
+        /// <returns>Meta data about a file or folder.</returns>
         FileFolderNode GetFileFolderNode(string path, string fileName = "");
 
         /// <summary>
@@ -58,15 +46,9 @@
         /// <summary>
         /// Adds a file or folder.
         /// </summary>
-        /// <param name="path">
-        /// The path of the file or folder.
-        /// </param>
-        /// <param name="name">
-        /// The name of the file or folder.
-        /// </param>
-        /// <param name="content">
-        /// The contents of the file.
-        /// </param>
+        /// <param name="path">The path of the file or folder.</param>
+        /// <param name="name">The name of the file or folder.</param>
+        /// <param name="content">The contents of the file.</param>
         void Add(string path, string name, string content);
 
         /// <summary>
