@@ -121,15 +121,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\SampleDatabase.sdf" />
-    <Content Include="App_Data\SqlFiles\FileTree\New folder\Fruits\Apples.sql">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="App_Data\SqlFiles\FileTree\New folder\Root.sql">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="App_Data\SqlFiles\FileTree\New folder\TextFile1.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="Global.asax" />
     <Content Include="static\codemirror\addon\comment\comment.js" />
     <Content Include="static\codemirror\addon\comment\continuecomment.js" />
