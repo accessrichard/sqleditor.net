@@ -83,22 +83,20 @@
         /// <returns>The columns names in the query.</returns>
         private static IEnumerable<Column> GetColumns(IEnumerable<Dictionary<string, dynamic>> queryResult)
         {
-            var list = new List<Column>();
             var result = queryResult.FirstOrDefault();
             if (result == null)
             {
-                return list;
+                return new List<Column>();
             }
 
-            list.AddRange(
+            return
                 result.Select(
-                    column => new Column
-                    {
-                        Formatter = column.Value is DateTime ? "dotNetDate" : string.Empty,
-                        Field = column.Key
-                    }));
-
-            return list;
+                    column =>
+                    new Column
+                        {
+                            Formatter = column.Value is DateTime ? "dotNetDate" : string.Empty,
+                            Field = column.Key
+                        });
         }
 
         /// <summary>
