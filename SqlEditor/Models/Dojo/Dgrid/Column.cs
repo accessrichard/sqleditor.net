@@ -18,7 +18,7 @@
         /// <summary>
         /// Gets or sets a value indicating whether the field is displayed in the grid.
         /// </summary>
-        public string Hidden { get; set; }
+        public bool Hidden { get; set; }
 
         /// <summary>
         /// Gets or sets a JS formatter name to use in order to 
