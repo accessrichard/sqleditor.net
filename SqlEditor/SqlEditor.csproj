@@ -11263,7 +11263,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Json\BaseController.cs" />
+    <Compile Include="Json\JsonController.cs" />
     <Compile Include="Json\JsonNetResult.cs" />
     <Compile Include="Models\Config\Config.cs" />
     <Compile Include="Models\Config\IConfig.cs" />
